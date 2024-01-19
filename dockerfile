@@ -1,5 +1,6 @@
 FROM centos:7
 LABEL author=shubham
+RUN apt install curl -y
 ADD  https://raw.githubusercontent.com/creationix/nvm/master/install.sh |
 RUN source ~/.bashrc   
 RUN nvm install ${18.16.0}
